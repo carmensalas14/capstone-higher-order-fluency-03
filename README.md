@@ -12,7 +12,7 @@
 
 **All the following problems can be solved using a higher order array method. You cannot use .forEach() to solve the following problems.** 
 
-**Test all your solutions for questions 1-7 with the following variable:** 
+**Test all your solutions for questions 1-10 with the following variable:** 
 
 `const animals =['cheetah','dog', 'cat', 'dodobird', 'bear', 'dolphin']`
 
@@ -52,12 +52,6 @@
     longToShort(animals) //['cheetah','dog', 'cat', 'dodobird', 'bear', 'dolphin']
     ```
     
-7. Write a function named `sum` that takes an array of numbers and returns the sum of all the numbers in the array.
-    
-    ```jsx
-    const numbers = [22, 15, 1114, 416, 37, 4]
-    sum(numbers) // 1608
-    ```
     
  8. Write a function named `noVowel` that takes an array of strings and returns an array of strings where all of the vowels have been turned into an x. 
     
@@ -73,4 +67,91 @@
     
     ```jsx
     allFour(animals) // false
+    ```
+    
+7. Write a function named `sum` that takes an array of numbers and returns the sum of all the numbers in the array.
+    
+    ```jsx
+    const numbers = [22, 15, 1114, 416, 37, 4]
+    sum(numbers) // 1608
+    ```
+    
+**Test all your solutions for the questions 1-4 with the following variable:** 
+
+```jsx
+const alumni = [
+{name:'Jarrit', job:'TPT',language:'JavaScript', age:23}, 
+{name:'Stephanie', job:'JPMorgan',language:'JavaScript', age:24}, 
+{name:'Devonte', job:'WW',language:'JavaScript', age:23}, 
+{name:'Enmanuel', job:'Asana',language:'JavaScript', age:23},
+{name:'Shemar', job:'SquareSpace',language:'JavaScript', age:23},
+{name:'Cielo', job:'NYT',language:'JavaScript', age:22},
+{name:'Carmen', job:'Marcy Lab School',language:'JavaScript', age:21},
+{name:'Itzel', job:'Marcy Lab School',language:'JavaScript', age:22},
+{name:'Ray', job:'Square Space',language:'JavaScript', age:21},
+{name:'Jan', job:'Square Space',language:'JavaScript', age:22},
+{name:'Uzma', job:'Time Share',language:'JavaScript', age:22}]
+```
+
+1. Write a function named `oddJob` that takes an array of objects and returns an array of objects if the job length is an odd number. 
+    
+    ```jsx
+    oddJob(alumni) //returns [
+      { name: 'Jarrit', job: 'TPT', language: 'JavaScript', age: 22 },
+      { name: 'Enmanuel', job: 'Asana', language: 'JavaScript', age: 21 },
+      {
+        name: 'Shemar',
+        job: 'SquareSpace',
+        language: 'JavaScript',
+        age: 23
+      },
+      { name: 'Cielo', job: 'NYT', language: 'JavaScript', age: 21 }
+    ]
+    ```
+2. Write a function named `birthYear` that takes an array of objects and returns an array of objects with a new property called birth year and the value containing the year they were born. You may assume the year is 2022. 
+    
+    ```jsx
+    birthYear(alumni) // returns [
+      {
+        name: 'Cielo',
+        job: 'NYT',
+        language: 'JavaScript',
+        age: 22,
+        birthYear: 2001
+      }...
+    ]
+    ```
+3. Write a function named `updateLanguage` that takes an array of objects and updates the language value to ES6 if the language is JavaScript, return the entire object. 
+    
+    ```jsx
+    updateLanguage(alumni) // [
+      { name: 'Jarrit', job: 'TPT', language: 'ES6', age: 22 },
+      { name: 'Stephanie', job: 'JPMorgan', language: 'ES6', age: 21 },
+      { name: 'Devonte', job: 'WW', language: 'ES6', age: 23 },
+      { name: 'Enmanuel', job: 'Asana', language: 'ES6', age: 21 },
+      { name: 'Shemar', job: 'SquareSpace', language: 'ES6', age: 23 },
+      { name: 'Cielo', job: 'NYT', language: 'ES6', age: 21 }
+    ]
+    ```
+4. Write a function named `orderedAlumni` that takes an array of objects and sorts the objects by the age of the alumni from oldest to youngest. 
+    
+    ```jsx
+    orderedAlumni(alumni) // returns [
+      { name: 'Devonte', job: 'WW', language: 'JavaScript', age: 23 },
+      {
+        name: 'Shemar',
+        job: 'SquareSpace',
+        language: 'JavaScript',
+        age: 23
+      },
+      { name: 'Jarrit', job: 'TPT', language: 'JavaScript', age: 22 },
+      {
+        name: 'Stephanie',
+        job: 'JPMorgan',
+        language: 'JavaScript',
+        age: 21
+      },
+      { name: 'Enmanuel', job: 'Asana', language: 'JavaScript', age: 21 },
+      { name: 'Cielo', job: 'NYT', language: 'JavaScript', age: 21 }
+    ]
     ```
