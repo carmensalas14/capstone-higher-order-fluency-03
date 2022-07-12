@@ -146,5 +146,5 @@ const alumni = [
 4. Write a function named `averageAge` that takes an array of objects and returns the average of all the ages from each age property in each object rounded to the nearest whole number. 
     
     ```jsx
-    averageAge(alumni) // 21
+    averageAge(alumni) // 22
     ```
